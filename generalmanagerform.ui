@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GeneralManagerForm</class>
+ <widget class="QMainWindow" name="GeneralManagerForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1600</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>General Manager</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="MyResources.qrc">
+    <normaloff>:/Images/make movie logo transparent.png</normaloff>:/Images/make movie logo transparent.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QMdiArea" name="mdiArea">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>791</width>
+      <height>561</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1600</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <widget class="QMenu" name="menuCast">
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>Cast</string>
+    </property>
+    <addaction name="actionCast_members"/>
+    <addaction name="actionCast_positions"/>
+   </widget>
+   <widget class="QMenu" name="menuMovies">
+    <property name="title">
+     <string>Movies</string>
+    </property>
+    <addaction name="actionMovies"/>
+    <addaction name="actionCast"/>
+    <addaction name="actionMovie_genres"/>
+    <addaction name="actionShowtimes"/>
+   </widget>
+   <widget class="QMenu" name="menuTheaters">
+    <property name="title">
+     <string>Theaters</string>
+    </property>
+    <addaction name="actionTheaters"/>
+    <addaction name="actionTheater_types"/>
+   </widget>
+   <widget class="QMenu" name="menuCustomers">
+    <property name="title">
+     <string>Customers</string>
+    </property>
+    <addaction name="actionCustomers"/>
+    <addaction name="actionCustomer_types"/>
+   </widget>
+   <widget class="QMenu" name="menuPayment_types">
+    <property name="title">
+     <string>Payment types</string>
+    </property>
+    <addaction name="actionPayment_types"/>
+   </widget>
+   <widget class="QMenu" name="menuPromotions">
+    <property name="title">
+     <string>Promotions</string>
+    </property>
+    <addaction name="actionPromotion_types"/>
+    <addaction name="actionCoupons"/>
+    <addaction name="actionPromotions"/>
+   </widget>
+   <widget class="QMenu" name="menuEmployees">
+    <property name="title">
+     <string>Employees</string>
+    </property>
+    <addaction name="actionEmployees"/>
+    <addaction name="actionEmployee_positions"/>
+   </widget>
+   <widget class="QMenu" name="menuBox_office">
+    <property name="title">
+     <string>Box office</string>
+    </property>
+    <addaction name="actionAll_transactions"/>
+    <addaction name="actionNew_transaction"/>
+   </widget>
+   <widget class="QMenu" name="menuLog_out">
+    <property name="title">
+     <string>Log out</string>
+    </property>
+    <addaction name="actionLog_out"/>
+   </widget>
+   <addaction name="menuCast"/>
+   <addaction name="menuMovies"/>
+   <addaction name="menuTheaters"/>
+   <addaction name="menuCustomers"/>
+   <addaction name="menuPayment_types"/>
+   <addaction name="menuPromotions"/>
+   <addaction name="menuEmployees"/>
+   <addaction name="menuBox_office"/>
+   <addaction name="menuLog_out"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="sizeGripEnabled">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <action name="actionCast_members">
+   <property name="icon">
+    <iconset resource="MyResources.qrc">
+     <normaloff>:/Images/cast member pic.png</normaloff>:/Images/cast member pic.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cast members</string>
+   </property>
+  </action>
+  <action name="actionCast_positions">
+   <property name="icon">
+    <iconset resource="MyResources.qrc">
+     <normaloff>:/Images/cast position pic.png</normaloff>:/Images/cast position pic.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cast positions</string>
+   </property>
+  </action>
+  <action name="actionMovies">
+   <property name="icon">
+    <iconset resource="MyResources.qrc">
+     <normaloff>:/Images/movie pic.png</normaloff>:/Images/movie pic.png</iconset>
+   </property>
+   <property name="text">
+    <string>Movies</string>
+   </property>
+  </action>
+  <action name="actionCast">
+   <property name="icon">
+    <iconset resource="MyResources.qrc">
+     <normaloff>:/Images/cast pic.png</normaloff>:/Images/cast pic.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cast</string>
+   </property>
+  </action>
+  <action name="actionMovie_genres">
+   <property name="icon">
+    <iconset resource="MyResources.qrc">
+     <normaloff>:/Images/movie genre pic.png</normaloff>:/Images/movie genre pic.png</iconset>
+   </property>
+   <property name="text">
+    <string>Movie genres</string>
+   </property>
+  </action>
+  <action name="actionTheaters">
+   <property name="icon">
+    <iconset resource="MyResources.qrc">
+     <normaloff>:/Images/theater pic.png</normaloff>:/Images/theater pic.png</iconset>
+   </property>
+   <property name="text">
+    <string>Theaters</string>
+   </property>
+  </action>
+  <action name="actionTheater_types">
+   <property name="icon">
+    <iconset resource="MyResources.qrc">
+     <normaloff>:/Images/theater type pic.png</normaloff>:/Images/theater type pic.png</iconset>
+   </property>
+   <property name="text">
+    <string>Theater types</string>
+   </property>
+  </action>
+  <action name="actionCustomers">
+   <property name="icon">
+    <iconset resource="MyResources.qrc">
+     <normaloff>:/Images/customer pic.png</normaloff>:/Images/customer pic.png</iconset>
+   </property>
+   <property name="text">
+    <string>Customers</string>
+   </property>
+  </action>
+  <action name="actionCustomer_types">
+   <property name="icon">
+    <iconset resource="MyResources.qrc">
+     <normaloff>:/Images/customer type pic.png</normaloff>:/Images/customer type pic.png</iconset>
+   </property>
+   <property name="text">
+    <string>Customer types</string>
+   </property>
+  </action>
+  <action name="actionPromotion_types">
+   <property name="icon">
+    <iconset resource="MyResources.qrc">
+     <normaloff>:/Images/promotion type pic.webp</normaloff>:/Images/promotion type pic.webp</iconset>
+   </property>
+   <property name="text">
+    <string>Promotion types</string>
+   </property>
+  </action>
+  <action name="actionCoupons">
+   <property name="icon">
+    <iconset resource="MyResources.qrc">
+     <normaloff>:/Images/coupon pic.png</normaloff>:/Images/coupon pic.png</iconset>
+   </property>
+   <property name="text">
+    <string>Coupons</string>
+   </property>
+  </action>
+  <action name="actionPromotions">
+   <property name="icon">
+    <iconset resource="MyResources.qrc">
+     <normaloff>:/Images/promotion pic.png</normaloff>:/Images/promotion pic.png</iconset>
+   </property>
+   <property name="text">
+    <string>Promotions</string>
+   </property>
+  </action>
+  <action name="actionEmployees">
+   <property name="icon">
+    <iconset resource="MyResources.qrc">
+     <normaloff>:/Images/employee pic.png</normaloff>:/Images/employee pic.png</iconset>
+   </property>
+   <property name="text">
+    <string>Employees</string>
+   </property>
+  </action>
+  <action name="actionEmployee_positions">
+   <property name="icon">
+    <iconset resource="MyResources.qrc">
+     <normaloff>:/Images/employee position pic.png</normaloff>:/Images/employee position pic.png</iconset>
+   </property>
+   <property name="text">
+    <string>Employee positions</string>
+   </property>
+  </action>
+  <action name="actionAll_transactions">
+   <property name="icon">
+    <iconset resource="MyResources.qrc">
+     <normaloff>:/Images/box office transaction pic.png</normaloff>:/Images/box office transaction pic.png</iconset>
+   </property>
+   <property name="text">
+    <string>All transactions</string>
+   </property>
+  </action>
+  <action name="actionNew_transaction">
+   <property name="icon">
+    <iconset resource="MyResources.qrc">
+     <normaloff>:/Images/new box office transaction pic.png</normaloff>:/Images/new box office transaction pic.png</iconset>
+   </property>
+   <property name="text">
+    <string>New transaction</string>
+   </property>
+  </action>
+  <action name="actionShowtimes">
+   <property name="icon">
+    <iconset resource="MyResources.qrc">
+     <normaloff>:/Images/showtime pic.png</normaloff>:/Images/showtime pic.png</iconset>
+   </property>
+   <property name="text">
+    <string>Showtimes</string>
+   </property>
+  </action>
+  <action name="actionPayment_types">
+   <property name="icon">
+    <iconset resource="MyResources.qrc">
+     <normaloff>:/Images/payment type pic.png</normaloff>:/Images/payment type pic.png</iconset>
+   </property>
+   <property name="text">
+    <string>Payment types</string>
+   </property>
+  </action>
+  <action name="actionLog_out">
+   <property name="icon">
+    <iconset resource="MyResources.qrc">
+     <normaloff>:/Images/logout pic.png</normaloff>:/Images/logout pic.png</iconset>
+   </property>
+   <property name="text">
+    <string>Log out</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="MyResources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
