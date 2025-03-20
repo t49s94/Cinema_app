@@ -1,0 +1,31 @@
+<RCC>
+    <qresource prefix="/Images">
+        <file>movie theater.png</file>
+        <file>available handicap seat.png</file>
+        <file>available seat.png</file>
+        <file>occupied handicap seat.png</file>
+        <file>occupied seat.png</file>
+        <file>selected handicap seat.png</file>
+        <file>selected seat.png</file>
+        <file>make movie logo transparent.png</file>
+        <file>box office transaction pic.png</file>
+        <file>cast member pic.png</file>
+        <file>cast pic.png</file>
+        <file>cast position pic.png</file>
+        <file>coupon pic.png</file>
+        <file>customer pic.png</file>
+        <file>customer type pic.png</file>
+        <file>employee pic.png</file>
+        <file>employee position pic.png</file>
+        <file>movie genre pic.png</file>
+        <file>movie pic.png</file>
+        <file>payment type pic.png</file>
+        <file>promotion pic.png</file>
+        <file>promotion type pic.webp</file>
+        <file>showtime pic.png</file>
+        <file>theater pic.png</file>
+        <file>theater type pic.png</file>
+        <file>new box office transaction pic.png</file>
+        <file>logout pic.png</file>
+    </qresource>
+</RCC>
